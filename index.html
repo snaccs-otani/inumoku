@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>イヌモク - コーヒー1杯で、親戚気分。</title>
+  <style>
+    body { font-family: "Noto Sans JP", sans-serif; margin: 0; background: #fff; color: #4B2E2E; line-height: 1.6; }
+    header { text-align: center; padding: 40px 20px; }
+    header h1 { font-size: 32px; margin: 0; color: #5A382D; }
+    header p { font-size: 16px; margin-top: 8px; }
+
+    .section { padding: 60px 20px; max-width: 960px; margin: auto; }
+    .section h2 { font-size: 24px; text-align: center; margin-bottom: 30px; color: #5A382D; }
+
+    /* メイン画像 */
+    .hero img { width: 100%; border-radius: 12px; }
+
+    /* 特徴カード */
+    .features { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .card { flex: 1; min-width: 250px; border-radius: 12px; padding: 20px; text-align: center; }
+    .card h3 { margin-top: 10px; margin-bottom: 10px; }
+    .card p { font-size: 14px; }
+    .card.yellow { background: #F6F7E3; }
+    .card.green { background: #E6F1E6; }
+    .card.beige { background: #EEDDD8; }
+
+    /* 利用の流れ */
+    .steps { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .step { flex: 1; min-width: 200px; text-align: center; }
+    .circle { width: 40px; height: 40px; border-radius: 50%; background: #5A382D; color: #fff; margin: auto; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+    .step p { margin-top: 10px; font-size: 14px; }
+
+    /* ユーザー体験 */
+    .experiences { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .exp { flex: 1; min-width: 250px; text-align: center; }
+    .exp img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; }
+    .exp p { margin-top: 10px; font-size: 14px; }
+
+    /* FAQ */
+    .faq { max-width: 800px; margin: auto; }
+    .faq-item { background: #f4f4f4; border-radius: 8px; padding: 15px; margin-bottom: 10px; }
+    .faq-item h4 { margin: 0 0 8px; color: #333; }
+    .faq-item p { margin: 0; font-size: 14px; }
+
+    /* CTA */
+    .cta { text-align: center; padding: 80px 20px; background: url('https://placehold.jp/1200x500.png') center/cover no-repeat; color: white; }
+    .cta h2 { font-size: 22px; background: rgba(0,0,0,0.5); display: inline-block; padding: 20px; border-radius: 12px; }
+
+    /* フッター */
+    footer { background: #F8F8F8; color: #666; padding: 30px 20px; font-size: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+    footer div { margin: 5px 0; }
+
+    /* 固定ボタン */
+    .fixed-btn { position: fixed; right: 20px; bottom: 20px; background: #00B900; color: white; padding: 15px 25px; border-radius: 50px; font-weight: bold; text-decoration: none; }
+    .fixed-btn:hover { opacity: 0.8; }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <h1>イヌモク</h1>
+    <p>コーヒー1杯で、癒し気分。</p>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="section hero">
+    <img src="https://placehold.jp/1200x500.png" alt="犬と人の触れ合いイメージ">
+  </section>
+
+  <!-- サービス紹介 -->
+  <section class="section">
+    <h2>イヌモクとは？</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      愛犬との時間をシェアしたい飼い主様と、ワンちゃんと触れ合いたい参加者をつなぐマッチングサービスです。<br>
+      カフェやドッグランで短時間（20分程度）、気軽に交流できます。
+    </p>
+  </section>
+
+  <!-- 特徴 -->
+  <section class="section">
+    <h2>特徴</h2>
+    <div class="features">
+      <div class="card yellow">
+        <h3>出会いをサポート</h3>
+        <p>双方の年齢や性別などの属性を事前にお伝え。承諾の上でマッチング</p>
+      </div>
+      <div class="card green">
+        <h3>短時間で気軽</h3>
+        <p>カフェやドッグランなど飼い主様指定の場所で20分程度を想定</p>
+      </div>
+      <div class="card beige">
+        <h3>簡単な謝礼</h3>
+        <p>イヌモクさんは飼い主様にカフェ代をご馳走。飲食がない場合1,000円程度の謝礼を</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 利用の流れ -->
+  <section class="section">
+    <h2>ご利用の流れ</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="circle">1</div>
+        <p>LINE追加<br>飼い主様もイヌモクさんもプロフィールと希望条件を登録</p>
+      </div>
+      <div class="step">
+        <div class="circle">2</div>
+        <p>マッチング<br>運営事務局が双方の希望をもとに最適なマッチング</p>
+      </div>
+      <div class="step">
+        <div class="circle">3</div>
+        <p>日時の設定<br>双方承諾の上で、運営含む3者のグループLINEを作成。場所や時間を調整・決定</p>
+      </div>
+      <div class="step">
+        <div class="circle">4</div>
+        <p>触れ合い<br>カフェやドッグランで、ワンちゃんと楽しいひとときを</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ユーザー体験 -->
+  <section class="section">
+    <h2>こんなシーンで使われています</h2>
+    <div class="experiences">
+      <div class="exp">
+        <img src="https://placehold.jp/200x200.png" alt="子どもと犬">
+        <p>子どもが犬を欲しがるけど、家では飼えないから…</p>
+      </div>
+      <div class="exp">
+        <img src="https://placehold.jp/200x200.png" alt="犬カフェ">
+        <p>犬カフェや猫カフェは、カップルや友達連れが多くて1人はちょっと…</p>
+      </div>
+      <div class="exp">
+        <img src="https://placehold.jp/200x200.png" alt="柴犬">
+        <p>定期的に会える1匹のワンちゃんに出会いたい。親戚気分を味わいたい</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq">
+    <h2>よくある質問</h2>
+    <div class="faq-item">
+      <h4>どこで出会えばいいですか？</h4>
+      <p>ドッグカフェやドッグランなどワンちゃんがリラックスできる屋外を推奨しております。</p>
+    </div>
+    <div class="faq-item">
+      <h4>お金のやり取りはどうなりますか？</h4>
+      <p>カフェ代のご馳走を推奨しております。飲食しない場合は、1000円を目安に現金でお渡しください。</p>
+    </div>
+    <div class="faq-item">
+      <h4>安全面での配慮はありますか？</h4>
+      <p>事前に双方のご年齢や性別をお伝えし、承諾の上でLINEをお繋ぎします。また、面会は第三者のいる公の場所のみ可能です（自宅など不可）。</p>
+    </div>
+    <div class="faq-item">
+      <h4>合わないと感じた場合、どうしたらいいですか？</h4>
+      <p>運営事務局に通報いただければ、以後の面会をお断り可能です。事情によっては相手を退会処分します。</p>
+    </div>
+    <div class="faq-item">
+      <h4>キャンセルはできますか？</h4>
+      <p>体調不良や事前にご連絡いただければキャンセル可能です。お互いの都合を尊重してご利用ください。</p>
+    </div>
+    <div class="faq-item">
+      <h4>恋愛目的で利用できますか？</h4>
+      <p>当サービスは、ワンちゃんとの触れ合いを主な目的としており、異性紹介を目的とするものではありません。</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>
+      ワンちゃんを飼えなくても、まるで親戚の子のように。<br>
+      定期的に会いたくなるワンちゃんを見つけるなら、イヌモク
+    </h2>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div>免責事項</div>
+    <div>お問い合わせ：Snaccs株式会社 / 東京都文京区根津1-5-8 アイヅビルB1F / contact@snaccs.jp</div>
+  </footer>
+
+  <!-- 固定ボタン -->
+  <a href="#" class="fixed-btn">登録はこちら</a>
+
+</body>
+</html>
